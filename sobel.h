@@ -11,5 +11,10 @@ extern int Kx[3][3];
 extern int Ky[3][3];
 
 // Thread function argument - TODO
+typedef struct { // implemented a struct like you said :D
+    int start_row;
+    int end_row;
+} ThreadStuffs;
 
 // Function declarations - TODO
+void *sobel_filter(void *arg);
